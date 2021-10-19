@@ -1,2 +1,5 @@
 # webPage1
-Pagina Web creada por Mercedez Lopez Logiurato y Facundo Medina Herrera para ser entregada en el TPO del curso CODO A CODO
+Entrega TPO Curso CODO A CODO
+Integrantes:
+       • Maria Mercedes Lopez DNI 43087209 comisión 1125
+       • Facundo Medina Herrera DNI 42660113 comisión 2173
