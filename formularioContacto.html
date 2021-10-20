@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/bootstrap.min.js">
+    <link rel="stylesheet" href="estilosFormularios.css">
+    <title>Formulario de Contacto</title>
 </head>
 <header>
     <nav>
-        <img src="IMAGENES/Logo1.png" alt="logo" width="120" height="120"> 
+        <img src="IMAGENES/Logo1.png" alt="logo" width="120" height="120">
         <a href="index.html">HOME</a>
         <a href="paquetes.html">PAQUETES</a>
         <a href="previaje.html">PRE VIAJE</a>
@@ -20,62 +23,45 @@
 <body>
     <section>
         <h1>Dejanos tus datos de contacto</h1>
-    <form action="link" method="POST" target="_blank">
-        <label for="fname">Nombre:</label><br>
-        <input type="text" id="fname" name="fname" placeholder="Ingrese su nombre"><br>
-        <label for="lname">Apellido:</label><br>
-        <input type="text" id="lname" name="lname" placeholder="Ingrese su apellido"><br>
-        <label for="provincia">Provincia:</label><br>
-        <select name="provincia" id="provincia">
-            <!--
-            <option value="">Buenos Aires</option>
-            <option value="">Capital Federal</option>
-            <option value="">Catamarca</option>
-            <option value="">Chaco</option>
-            <option value="">Chubut</option>
-            <option value="">Córdoba</option>
-            <option value="">Corrientes</option>
-            <option value="">Entre Ríos</option>
-            <option value="">Formosa</option>
-            <option value="">Jujuy</option>
-            <option value="">La Pampa</option>
-            <option value="">La Rioja</option>
-            <option value="">Mendoza</option>
-            <option value="">Misiones</option>
-            <option value="">Neuquén</option>
-            <option value="">Río Negro</option>
-            <option value="">Salta</option>
-            <option value="">San Juan</option>
-            <option value="">San Luis</option>
-            <option value="">Santa Cruz</option>
-            <option value="">Santa Fe</option>
-            <option value="">Santiago del Estero</option>
-            <option value="">Tierra del Fuego</option>
-            <option value="">Tucumán</option>
-            -->
-
-        </select><br>
-        <label for="localidad">Localidad:</label><br>
-        <select name="localidad" id="localidad">
-            <!--
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            -->
-        </select><br>
-        <label for="mail" id=" mail">Mail de contacto:</label><br>
-        <input type="text" id="mail" placeholder="xxx@xxx.com"><br>
-        <label for="phone" id="phone">Teléfono de contacto:</label><br>
-        <input type="text" id="phone" placeholder="Ingrese su nro telefónico"><br>
-        <label for="consulta" id="consulta">Espacio para escribir su consulta:</label><br>
-        <input type="text" id="consulta" placeholder="Ingrese su consulta..."><br>
-        <input type="submit" value="Enviar"><br>
-    </form>
-</section>
+        <div class="container">
+            <form action="link" method="POST" target="_blank">
+                <div class="row">
+                    <div class="col">
+                        <label for="fname">Nombre:</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Ingrese su nombre"><br>
+                    </div>
+                    <div class="col">
+                        <label for="lname">Apellido:</label><br>
+                        <input type="text" id="lname" name="lname" placeholder="Ingrese su apellido"><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="provincia">Provincia:</label><br>
+                        <select name="provincia" id="provincia">
+                </select><br>
+                    </div>
+                    <div class="col">
+                        <label for="localidad">Localidad:</label><br>
+                        <select name="localidad" id="localidad"></select><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="mail" id=" mail">Mail de contacto:</label><br>
+                        <input type="text" id="mail" placeholder="xxx@xxx.com"><br>
+                    </div>
+                    <div class="col">
+                        <label for="phone" id="phone">Teléfono de contacto:</label><br>
+                        <input type="text" id="phone" placeholder="Ingrese su nro telefónico"><br>
+                    </div>
+                </div>
+                <label for="consulta" id="consulta">Espacio para escribir su consulta:</label><br>
+                <textarea id="consulta" placeholder="Ingrese su consulta..." rows="10" cols="100"></textarea><br>
+                <input type="submit" value="Enviar"><br>
+            </form>
+        </div>
+    </section>
 </body>
 
 </html>
