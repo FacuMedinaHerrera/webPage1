@@ -2,57 +2,59 @@ html {
     font-size: 1rem;
     height: 100%;
 }
+
 body {
-    border: 4px tomato solid;
+    border: 4px rgba(147, 58, 155, 0.774);
     min-height: 50px;
-    background-color: rgb(231, 205, 201);
+    background-color: rgba(36, 71, 117, 0.767);
     margin: 0;
-    
 }
-header, main, footer {
-    border: 3px tomato solid;
+
+header,
+main,
+footer {
+    border: 3px rgba(192, 143, 52, 0.856) solid;
     min-height: 50px;
     margin: 1rem;
     background-color: rgb(184, 184, 204);
-
 }
-.contenido-principal{
+
+.contenido-principal {
     border: 3px rgb(165, 165, 197) solid;
     margin: 1rem;
     width: 75%;
 }
-.heather-logo{
-    box-align:left;
+
+.heather-logo {
+    box-align: left;
 }
+
 .header-menubar {
-text-align: center;
-
+    text-align: center;
 }
 
-main{
+main {
     min-height: 200px;
 }
-.secciones {
-border: 2px rgb(172, 172, 204) solid;
-margin: 1rem;
-background-color:rgba(247, 238, 205, 0.808) ;
-text-align: left;
 
+.secciones {
+    border: 2px rgb(172, 172, 204) solid;
+    margin: 1rem;
+    background-color: rgba(247, 238, 205, 0.808);
+    text-align: left;
 }
 
 .seccion {
     margin: 1rem;
     border: 2px rgb(172, 172, 204) solid;
-    background-color:rgba(247, 238, 205, 0.808) ;
-   
-  
+    background-color: rgba(247, 238, 205, 0.808);
 }
-aside{
+
+aside {
+    float: right;
     margin: 1rem;
     background-color: darkgray;
     text-align: center;
     border: 2px rgb(172, 172, 204) solid;
-    float: right;
-    min-height: 180px;
     min-width: 20%;
 }
