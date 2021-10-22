@@ -4,22 +4,23 @@ html {
 }
 body {
     border: 4px tomato solid;
-    min-height: 50px;
+    min-height: 100px;
     background-color: rgb(231, 205, 201);
     margin: 0;
     
 }
-header, main, footer {
+header, footer {
     border: 3px tomato solid;
     min-height: 50px;
     margin: 1rem;
     background-color: rgb(184, 184, 204);
+    
 
 }
 .contenido-principal{
     border: 3px rgb(165, 165, 197) solid;
     margin: 1rem;
-    width: 75%;
+    width: 65%;
 }
 .heather-logo{
     box-align:left;
@@ -31,6 +32,10 @@ text-align: center;
 
 main{
     min-height: 200px;
+    border: 3px tomato solid;
+    margin: 1rem;
+    background-color: rgb(184, 184, 204);
+    overflow: auto;
 }
 .secciones {
 border: 2px rgb(172, 172, 204) solid;
@@ -38,12 +43,15 @@ margin: 1rem;
 background-color:rgba(247, 238, 205, 0.808) ;
 text-align: left;
 
+min-width: 75%;
+
 }
 
 .seccion {
     margin: 1rem;
     border: 2px rgb(172, 172, 204) solid;
     background-color:rgba(247, 238, 205, 0.808) ;
+    min-width: 75%;
    
   
 }
@@ -55,4 +63,6 @@ aside{
     float: right;
     min-height: 180px;
     min-width: 20%;
+    align-self: center;
+    
 }
