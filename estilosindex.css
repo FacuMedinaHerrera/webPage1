@@ -1,0 +1,17 @@
+html {
+    font-size: 1rem;
+    height: 100%;
+}
+body {
+    border: 4px tomato solid;
+    min-height: 50px;
+    background-color: rgb(231, 205, 201);
+    margin: 0;
+}
+header, main, footer {
+    border: 3px tomato solid;
+    min-height: 50px;
+    margin: 1rem;
+    background-color: rgb(184, 184, 204);
+
+}
