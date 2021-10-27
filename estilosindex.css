@@ -5,6 +5,7 @@ html {
 
 body {
 
+    
     min-height: 100px;
     background-color: rgb(11, 11, 59);
     margin: 0;
@@ -65,7 +66,7 @@ footer{
 main {
     display: flex
     border: 3px rgba(23, 4, 129, 0.856) solid;
-    margin> 1rem;
+    margin: 1rem;
     background-color: rgb(184, 184, 204);
     overflow: auto;
 
