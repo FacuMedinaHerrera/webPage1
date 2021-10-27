@@ -8,7 +8,6 @@ body {
     border: 4px rgb(10, 17, 73) solid;
     min-height: 100px;
     background-color: rgb(11, 11, 59);
-
     margin: 0;
 }
 
@@ -23,8 +22,6 @@ header,main,footer {
 footer{
     font-family: 'Khand', sans-serif;
 }
-
-
 
 .heather-logo {
     
@@ -124,4 +121,20 @@ aside {
 #mapa{
     width: 90%;
    min-height: 180px;
+}
+i{
+    padding: 0.5rem;
+}
+.imagenes{
+    padding: 1rem;
+    border: 4px rgba(23, 4, 129, 0.856) solid;
+    width: auto;
+    background-color: rgba(36, 36, 75, 0.877);
+}
+img{
+    width: auto;
+    display: inline-block;
+    padding: 0.3rem;
+   
+
 }
