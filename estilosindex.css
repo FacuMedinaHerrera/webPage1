@@ -5,7 +5,6 @@ html {
 
 body {
 
-    border: 4px rgb(10, 17, 73) solid;
     min-height: 100px;
     background-color: rgb(11, 11, 59);
     margin: 0;
@@ -64,9 +63,9 @@ footer{
    
 
 main {
-    min-height: 200px;
+    display: flex
     border: 3px rgba(23, 4, 129, 0.856) solid;
-    margin: 1rem;
+    margin> 1rem;
     background-color: rgb(184, 184, 204);
     overflow: auto;
 
@@ -74,6 +73,7 @@ main {
 
 
 .secciones {
+    flex: 1;
     border: 2px rgb(172, 172, 204) solid;
     margin: 1rem;
     background-color: rgba(247, 238, 205, 0.808);
@@ -87,6 +87,7 @@ main {
 }
 
 .seccion {
+    flex: 1;
     margin: 1rem;
     border: 2px rgb(172, 172, 204) solid;
     background-color:rgba(247, 238, 205, 0.808) ;  
@@ -109,6 +110,7 @@ main {
 
 }
 aside {
+    flex-direction: row;
     float: left;
     margin: 1rem;
     background-color: darkgray;
@@ -135,6 +137,5 @@ img{
     width: auto;
     display: inline-block;
     padding: 0.3rem;
-   
-
+  
 }
