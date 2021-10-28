@@ -81,7 +81,40 @@ footer{
 
 }
 .contenido-principal{
+    display: grid;
+    grid-template-columns: 3fr 1fr ;
+    grid-gap: 1rem;
     font-family: 'DM Serif Display', serif;
+    grid-auto-rows: auto;
+}
+.box1{
+    grid-column:1/2;
+    grid-row: 1/2;
+    margin: 1rem 1rem;
+    
+}
+.box2{
+    grid-column: 2/3;
+    grid-row:1/3;
+    margin: 1rem 1rem;
+}
+.box3{
+    grid-column:1/2 ;
+    grid-row: 2/3;
+    margin: 1rem 1rem;
+    
+    
+}
+.sectionG{
+    background-color: rgb(182, 194, 206);
+    padding: 1rem;
+}
+.section{
+    background-color: rgb(182, 194, 206);
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    
 }
    
 
@@ -95,31 +128,8 @@ main {
 }
 
 
-.secciones {
-    
-    border: 2px rgb(172, 172, 204) solid;
-    margin: 1rem;
-    background-color: rgba(247, 238, 205, 0.808);
-    text-align: left;
-    min-height: 180px;
-    width: 60%;
-    height: auto;
-    float: left;
-    padding: 30px;
-    
-}
 
-.seccion {
-    
-    margin: 1rem;
-    border: 2px rgb(172, 172, 204) solid;
-    background-color:rgba(247, 238, 205, 0.808) ;  
-    min-height: 180px;
-    min-width: 60%;
-    height: auto;
-    float: left;
-    padding: 30px;
-}
+
 
 #botonNovedades {
     background-color: rgba(11, 11, 66, 0.699);
@@ -132,17 +142,7 @@ main {
   color:white 
 
 }
-aside {
-   
-    float: left;
-    margin: 1rem;
-    background-color: darkgray;
-    text-align: center;
-    border: 2px rgb(172, 172, 204) solid;
-    min-width: 20%; 
-    min-height: 100%; 
-   
-}
+
 #mapa{
     width: 90%;
    min-height: 180px;
