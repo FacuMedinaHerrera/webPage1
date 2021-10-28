@@ -17,66 +17,93 @@
 
 <body>
     <header>
-        <div class="header-logo"><a href="index.html"><img src="IMAGENES/Logo1.png" alt="logo" width="200" height="200"></a></div>
+        <div class="header-logo">
+            <a href="index.html"><img src="IMAGENES/Logo1.png" alt="logo" width="200" height="200"></a>
+        </div>
 
         <nav class="header-menubar">
             <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-           
-        <div class="box">
-            <div class="c1"><a href="index.html">HOME</a></div>
-            <div class="c2"></div><a href="paquetes.html">PAQUETES</a></div>
+
+            <div class="box">
+                <div class="c1"><a href="index.html">HOME</a></div>
+                <div class="c2"></div><a href="paquetes.html">PAQUETES</a></div>
             <div class="c3"></div><a href="previaje.html">PRE VIAJE</a></div>
             <div class="c4"> <a href="formularioContacto.html">CONTACTO</a></div>
-        </div>
+            </div>
         </nav>
-        
+
     </header>
- <main>
-    <section>
-        <div class="jumbotron jumbotron-fluid">
-            <h1 class="display-4">Dejanos tus datos de contacto</h1>
-        </div>
-        <div class="container">
-            <form action="link" method="POST" target="_blank">
-                <div class="row">
-                    <div class="col">
-                        <label for="fname">Nombre:</label><br>
-                        <input type="text" id="fname" name="fname" placeholder="Ingrese su nombre"><br>
+    <main>
+        <section>
+            <div class="jumbotron jumbotron-fluid">
+                <h1 class="display-4">Dejanos tus datos de contacto</h1>
+            </div>
+            <div class="container">
+                <form action="link" method="POST" target="_blank">
+                    <div class="row">
+                        <div class="col">
+                            <label for="fname">Nombre:</label><br>
+                            <input type="text" id="fname" name="fname" placeholder="Ingrese su nombre"><br>
+                        </div>
+                        <div class="col">
+                            <label for="lname">Apellido:</label><br>
+                            <input type="text" id="lname" name="lname" placeholder="Ingrese su apellido"><br>
+                        </div>
                     </div>
-                    <div class="col">
-                        <label for="lname">Apellido:</label><br>
-                        <input type="text" id="lname" name="lname" placeholder="Ingrese su apellido"><br>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <label for="provincia">Provincia:</label><br>
-                        <select name="provincia" id="provincia">
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="provincia">Provincia:</label><br>
+                            <select name="provincia" id="provincias">
+                            <option value="BuenosAires">Buenos Aires</option>
+                            <option value="CABA">CABA</option>
+                            <option value="Catamarca">Catamarca</option>
+                            <option value="Chaco">Chaco</option>
+                            <option value="Chubut">Chubut</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Corrientes">Corrientes</option>
+                            <option value="EntreRíos"> Entre Ríos</option>
+                            <option value="Formosa">Formosa</option>
+                            <option value="Jujuy">Jujuy</option>
+                            <option value="LaPampa">La Pampa</option>
+                            <option value="LaRioja">La Rioja</option>
+                            <option value="Mendoza">Mendoza</option>
+                            <option value="Misiones">Misiones</option>
+                            <option value="Neuquén">Neuquén</option>
+                            <option value="RioNegro">Río Negro</option>
+                            <option value="Salta">Salta</option>
+                            <option value="SanJuan">San Juan</option>
+                            <option value="SanLuis">San Luis</option>
+                            <option value="SantaCruz">Santa Cruz</option>
+                            <option value="SantaFe">Santa Fe</option>
+                            <option value="SantiagoDelEstero">Santiago del Estero</option>
+                            <option value="TierraDelFuego">Tierra del Fuego</option>
+                            <option value="Tucumán">Tucumán</option>
                 </select><br>
+                        </div>
+                        <div class="col">
+                            <label for="localidad">Localidad:</label><br>
+                            <select name="localidad" id="localidad"></select><br>
+                        </div>
                     </div>
-                    <div class="col">
-                        <label for="localidad">Localidad:</label><br>
-                        <select name="localidad" id="localidad"></select><br>
+                    <div class="row">
+                        <div class="col">
+                            <label for="mail" id=" mail">Mail de contacto:</label><br>
+                            <input type="text" id="mail" placeholder="xxx@xxx.com"><br>
+                        </div>
+                        <div class="col">
+                            <label for="phone" id="phone">Teléfono de contacto:</label><br>
+                            <input type="text" id="phone" placeholder="Ingrese su nro telefónico"><br>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <label for="mail" id=" mail">Mail de contacto:</label><br>
-                        <input type="text" id="mail" placeholder="xxx@xxx.com"><br>
-                    </div>
-                    <div class="col">
-                        <label for="phone" id="phone">Teléfono de contacto:</label><br>
-                        <input type="text" id="phone" placeholder="Ingrese su nro telefónico"><br>
-                    </div>
-                </div>
-                <label for="consulta" id="consulta">Espacio para escribir su consulta:</label><br>
-                <textarea id="consulta" placeholder="Ingrese su consulta..." rows="5"></textarea><br>
-                <button type="submit" class="btn btn-primary btn-lg btnblock">
+                    <label for="consulta" id="consulta">Espacio para escribir su consulta:</label><br>
+                    <textarea id="consulta" placeholder="Ingrese su consulta..." rows="5"></textarea><br>
+                    <button type="submit" class="btn btn-primary btn-lg btnblock">
                     Enviar</button>
+            </div>
             </form>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
     <footer>
         <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap" rel="stylesheet">
         <section>
@@ -84,17 +111,18 @@
             <p><i class="fas fa-phone-square-alt"></i>+54 4903-2486</p>
             <p><i class="far fa-credit-card"></i>tarjetas de credito/debito</p>
             <p><i class="fas fa-map-marker-alt"></i>Senillosa 60, CABA</p>
-           
+
         </section>
         <section>
             <nav class="redes">
                 <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram"></i></a> 
+                <a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram"></i></a>
                 <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter-square"></i></a>
             </nav>
         </section>
 
     </footer>
 </body>
+
 
 </html>

@@ -86,7 +86,7 @@ footer{
    
 
 main {
-    display: flex
+    
     border: 3px rgba(23, 4, 129, 0.856) solid;
     margin: 1rem;
     background-color: rgb(184, 184, 204);
@@ -96,7 +96,7 @@ main {
 
 
 .secciones {
-    flex: 1;
+    
     border: 2px rgb(172, 172, 204) solid;
     margin: 1rem;
     background-color: rgba(247, 238, 205, 0.808);
@@ -110,7 +110,7 @@ main {
 }
 
 .seccion {
-    flex: 1;
+    
     margin: 1rem;
     border: 2px rgb(172, 172, 204) solid;
     background-color:rgba(247, 238, 205, 0.808) ;  
@@ -133,7 +133,7 @@ main {
 
 }
 aside {
-    flex-direction: row;
+   
     float: left;
     margin: 1rem;
     background-color: darkgray;
