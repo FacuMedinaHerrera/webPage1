@@ -5,10 +5,9 @@ html {
 
 body {
 
-    border: 4px rgb(10, 17, 73) solid;
+    
     min-height: 100px;
     background-color: rgb(11, 11, 59);
-
     margin: 0;
 }
 
@@ -20,18 +19,74 @@ header,main,footer {
 
 }
 
-
+footer{
+    font-family: 'Khand', sans-serif;
+}
 
 .heather-logo {
-    box-align: left;
+    
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 1rem;
+    
 }
 
-.header-menubar {
+.header-menubar{
+    padding: 14px 16px;
+    font-family: 'Bebas Neue', cursive;
+    position:relative;
     text-align: center;
+    
 }
+.header-menubar a {
+    border: 4px rgba(23, 4, 129, 0.856) solid;
+    background-color: rgb(182, 194, 206);
+    text-align: center;
+    top: auto;
+    width: auto;
+    display: inline-block;
+    margin: 0 0.5rem 0;
+    font-weight: 700;
+    left: auto;
+    font-size: 30px;
+    padding: 16px 16px;
+    text-decoration: none;
+   
+}
+.box div{
+    display: flex;
+    display: inline-block;
+    border: 3px ;
+    justify-content: space-between space-around;
+    padding: 1rem;
+   
+   
+}
+.c1{
+  flex:2;
+}
+.c2{
+    flex:1;
+}
+.c3{
+    flex:1;
+}
+.c4{
+    flex: 1;
+}
+.header-menubar a:hover {
+    background-color: rgb(159, 170, 190);
+    color: black;
+
+}
+.contenido-principal{
+    font-family: 'DM Serif Display', serif;
+}
+   
 
 main {
-    min-height: 200px;
+    display: flex
     border: 3px rgba(23, 4, 129, 0.856) solid;
     margin: 1rem;
     background-color: rgb(184, 184, 204);
@@ -41,24 +96,29 @@ main {
 
 
 .secciones {
+    flex: 1;
     border: 2px rgb(172, 172, 204) solid;
     margin: 1rem;
     background-color: rgba(247, 238, 205, 0.808);
     text-align: left;
     min-height: 180px;
-    width: 65%;
+    width: 60%;
     height: auto;
     float: left;
+    padding: 30px;
+    
 }
 
 .seccion {
+    flex: 1;
     margin: 1rem;
     border: 2px rgb(172, 172, 204) solid;
     background-color:rgba(247, 238, 205, 0.808) ;  
     min-height: 180px;
-    min-width: 65%;
+    min-width: 60%;
     height: auto;
     float: left;
+    padding: 30px;
 }
 
 #botonNovedades {
@@ -73,16 +133,32 @@ main {
 
 }
 aside {
-    float: right;
+    flex-direction: row;
+    float: left;
     margin: 1rem;
     background-color: darkgray;
     text-align: center;
     border: 2px rgb(172, 172, 204) solid;
-    min-width: 25%; 
+    min-width: 20%; 
     min-height: 100%; 
    
 }
 #mapa{
     width: 90%;
    min-height: 180px;
+}
+i{
+    padding: 0.5rem;
+}
+.imagenes{
+    padding: 1rem;
+    border: 4px rgba(23, 4, 129, 0.856) solid;
+    width: auto;
+    background-color: rgba(36, 36, 75, 0.877);
+}
+img{
+    width: auto;
+    display: inline-block;
+    padding: 0.3rem;
+  
 }

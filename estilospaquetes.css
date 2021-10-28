@@ -1,13 +1,17 @@
-h1 {
-    text-align: center;
-}
-
-textarea {
-    width: 100%;
-}
 html {
     font-size: 1rem;
     height: 100%;
+}
+h1 { 
+    text-align: center;
+    font-family: 'Alfa Slab One', cursive;
+    
+}
+h2{
+    font-family: 'DM Serif Display', serif;
+}
+main{
+    font-family: 'Prompt', sans-serif;
 }
 body {
 
@@ -39,33 +43,11 @@ footer{
 }
 
 .header-menubar{
-    
     padding: 14px 16px;
     font-family: 'Bebas Neue', cursive;
     position:relative;
     text-align: center;
     
-}
-.box div{
-    display: flex;
-    display: inline-block;
-    border: 3px ;
-    justify-content: space-between space-around;
-    padding: 1rem;
-   
-   
-}
-.c1{
-  flex:2;
-}
-.c2{
-    flex:1;
-}
-.c3{
-    flex:1;
-}
-.c4{
-    flex: 1;
 }
 .header-menubar a {
     border: 4px rgba(23, 4, 129, 0.856) solid;
@@ -87,7 +69,27 @@ footer{
     color: black;
 
 }
-
 i{
     padding: 0.5rem;
+}
+.box div{
+    display: flex;
+    display: inline-block;
+    border: 3px ;
+    justify-content: space-between space-around;
+    padding: 1rem;
+   
+   
+}
+.c1{
+  flex:2;
+}
+.c2{
+    flex:1;
+}
+.c3{
+    flex:1;
+}
+.c4{
+    flex: 1;
 }

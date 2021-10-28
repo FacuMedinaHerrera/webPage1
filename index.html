@@ -8,28 +8,41 @@
     <link rel="icon" type="image/png" href="IMAGENES/favicon.ico" sizes="64x64">
     <title>TURISTECA</title>
     <link rel="stylesheet" href="estilosindex.css">
+    <script src="https://kit.fontawesome.com/71ba4d0035.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div class="header-logo"><img src="IMAGENES/Logo1.png" alt="logo" width="120" height="120"> </div>
+        <div class="header-logo"><a href="index.html"><img src="IMAGENES/Logo1.png" alt="logo" width="200" height="200"></a></div>
 
-        <div class="header-menubar">
-            <nav>
-
-                <a href="index.html">HOME</a>
-                <a href="paquetes.html">PAQUETES</a>
-                <a href="previaje.html">PRE VIAJE</a>
-                <a href="formularioContacto.html">CONTACTO</a>
-            </nav>
-        </div>
-
+        <nav class="header-menubar">
+            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+           
+        <div class="box"> 
+            <div class="c1"><a href="index.html">HOME</a></div>
+            <div class="c2"> <a href="paquetes.html">PAQUETES</a></div>
+            <div class="c3"><a href="previaje.html">PRE VIAJE</a></div>
+            <div class="c4"> <a href="formularioContacto.html">CONTACTO</a></div>
+        </div> 
+        </nav>
+        
     </header>
 
     <main>
+        <section class="imagenes">
+            <img src="IMAGENES/index1.jpg" height="300px" width="300px"> 
+            <img src="IMAGENES/index2.jpg" height="300px" width="300px">
+            <img src="IMAGENES/index3pg.jpg" height="300px" width="300px">
+            <img src="IMAGENES/index4.jpg" height="300px" width="300">
+
+        </section> 
         <div class="contenido-principal">
+           
+            <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+          
             <section class="secciones">
                 <article>
+        
                     <h1>¿Quienes somos?</h1>
                     <p> En Turisteca nos caracterizamos por el servicio y trato personalizado. Diseñamos y programaos tu viaje, brindandote asistencia previa y durante el viaje. El objetivo Principal de nuestra empresa es lograr la total satisfaccion de nuestros
                         pasajeros; para ello, contamos con un profesional equipo en todas las areas.
@@ -43,26 +56,29 @@
                 <input type="text" id="recibinovedades" placeholder="xxxx@xxxx.com"><br>
                 <button type="submit" id="botonNovedades">Suscribirme</button>
             </section>
-       
+        </div>
 
-            <aside>
-               <h1>¿Donde estamos?</h1><iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.7603959298774!2d-58.43058413641257!3d-34.616277322773755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca44a0971f8d%3A0x4220201fe19c1972!2sSenillosa%2060%2C%20C1424BOB%20CABA!5e0!3m2!1ses-419!2sar!4v1634674686742!5m2!1ses-419!2sar"
+        <div class="aside"></div>
+        <aside>
+            <h1>¿Donde estamos?</h1><iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.7603959298774!2d-58.43058413641257!3d-34.616277322773755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca44a0971f8d%3A0x4220201fe19c1972!2sSenillosa%2060%2C%20C1424BOB%20CABA!5e0!3m2!1ses-419!2sar!4v1634674686742!5m2!1ses-419!2sar"
                 width="100" height="120" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-         </aside>
+        </aside>
         </div>
     </main>
     <footer>
+        <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap" rel="stylesheet">
         <section>
-            <p>mail@gmail.com</p>
-            <p>+54 4903-2486</p>
-            <p>tarjetas de credito/debito</p>
-            <p>Senillosa 60, CABA</p>
+            <p><i class="far fa-envelope"></i>turisteca@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>+54 4903-2486</p>
+            <p><i class="far fa-credit-card"></i>tarjetas de credito/debito</p>
+            <p><i class="fas fa-map-marker-alt"></i>Senillosa 60, CABA</p>
+           
         </section>
         <section>
-            <nav>
-                <a href="https://www.facebook.com/">F</a>
-                <a href="https://www.instagram.com/?hl=es">IG</a>
-                <a href="https://twitter.com/?lang=es">TW</a>
+            <nav class="redes">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram"></i></a> 
+                <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter-square"></i></a>
             </nav>
         </section>
 
