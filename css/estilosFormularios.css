@@ -1,17 +1,97 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background: #E5E5E5;
+main,
+footer {
+    border: 3px rgba(23, 4, 129, 0.856) solid;
+    min-height: 50px;
+    margin: 1rem;
+    background-color: rgb(184, 184, 204);
 }
 
 main {
-    max-width: 800px;
-    width: 90%;
-    margin: auto;
-    padding: 40px;
+    padding: 1rem;
+}
+
+i {
+    padding: 1rem;
+}
+
+footer {
+    font-family: 'Khand', sans-serif;
+}
+
+html {
+    font-size: 1rem;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    animation: pulse;
+    animation-duration: 1s;
+}
+
+body {
+    min-height: 100px;
+    background-color: rgb(11, 11, 59);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-logo {
+    width: auto;
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+#header-menubar {
+    padding: 14px 16px;
+    font-family: 'Bebas Neue', cursive;
+    position: relative;
+    text-align: center;
+}
+
+#header-menubar a {
+    border: 4px rgba(23, 4, 129, 0.856) solid;
+    background-color: rgb(182, 194, 206);
+    text-align: center;
+    top: auto;
+    width: auto;
+    display: inline-block;
+    margin: 0 0.5rem 0;
+    font-weight: 700;
+    left: auto;
+    font-size: 30px;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+
+#box div {
+    display: flex;
+    display: inline-block;
+    border: 3px;
+    justify-content: space-between space-around;
+    padding: 1rem;
+}
+
+#c1 {
+    flex: 2;
+}
+
+#c2,
+#c3,
+#c4 {
+    flex: 1;
+}
+
+.header-menubar a:hover {
+    background-color: rgb(159, 170, 190);
+    color: black;
 }
 
 #formulario {

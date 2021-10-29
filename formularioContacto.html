@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="C:\Users\Admin\Desktop\curso_Python\webPage1\css\bootstrap.min.css">
     <link rel="stylesheet" href="C:\Users\Admin\Desktop\curso_Python\webPage1\js\bootstrap.min.js">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -14,18 +15,18 @@
 
 <body>
     <header>
-        <div class="header-logo">
+        <div id="header-logo">
             <a href="index.html"><img src="IMAGENES/Logo1.png" alt="logo" width="200" height="200"></a>
         </div>
 
-        <nav class="header-menubar">
+        <nav id="header-menubar">
             <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-            <div class="box">
-                <div class="c1"><a href="index.html">HOME</a></div>
-                <div class="c2"><a href="paquetes.html">PAQUETES</a></div>
-                <div class="c3"><a href="previaje.html">PRE VIAJE</a></div>
-                <div class="c4"> <a href="formularioContacto.html">CONTACTO</a></div>
+            <div id="box">
+                <div id="c1"><a href="index.html">HOME</a></div>
+                <div id="c2"><a href="paquetes.html">PAQUETES</a></div>
+                <div id="c3"><a href="previaje.html">PRE VIAJE</a></div>
+                <div id="c4"> <a href="formularioContacto.html">CONTACTO</a></div>
             </div>
         </nav>
 
@@ -41,7 +42,6 @@
                     <label for="fname" class="formulario__label">Nombre</label>
                     <div class="formulario__grupo-input">
                         <input type="text" class="formulario__input" name="fname" id="fname" placeholder="Ingrese su nombre">
-
                     </div>
                     <p class="formulario__input-error">Nombre no válido.</p>
                 </div>
@@ -117,19 +117,37 @@
                     </div>
                     <p class="formulario__input-error">Teléfono no válido.</p>
                 </div>
-                <label for="consulta" id="consulta">Espacio para escribir su consulta:</label><br>
+                <label for="consulta" class="formulario__label">Espacio para escribir su consulta:</label><br>
                 <textarea id="consulta" placeholder="Ingrese su consulta..." rows="5"></textarea><br>
                 <div class="formulario__mensaje" id="formulario__mensaje">
                     <p><b>Error:</b> Por favor rellena el formulario correctamente. </p>
                 </div>
 
                 <div class="formulario__grupo formulario__grupo-btn-enviar">
-                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                     <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                 </div>
             </form>
     </main>
+    <footer>
+        <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap" rel="stylesheet">
+        <section>
+            <p><i class="far fa-envelope"></i>turisteca@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>+54 4903-2486</p>
+            <p><i class="far fa-credit-card"></i>tarjetas de credito/debito</p>
+            <p><i class="fas fa-map-marker-alt"></i>Senillosa 60, CABA</p>
 
+        </section>
+        <section>
+            <nav class="redes">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter-square"></i></a>
+            </nav>
+            <address style="text-align:center;">Derechos reservados @2021</address>
+        </section>
+
+    </footer>
     <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
