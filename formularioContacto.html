@@ -3,16 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="IMAGENES/favicon.ico" sizes="64x64">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="js/bootstrap.min.js">
-    <link rel="stylesheet" href="css/estilosFormularios.css">
-    <title>Formulario de Contacto</title>
-    <script src="https://kit.fontawesome.com/71ba4d0035.js" crossorigin="anonymous"></script>
-    <script src="scriptFormulario.js"></script>
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="C:\Users\Admin\Desktop\curso_Python\webPage1\css\bootstrap.min.css">
+    <link rel="stylesheet" href="C:\Users\Admin\Desktop\curso_Python\webPage1\js\bootstrap.min.js">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
@@ -38,94 +35,103 @@
             <div class="jumbotron jumbotron-fluid">
                 <h1 class="display-4">Dejanos tus datos de contacto</h1>
             </div>
-            <div class="container">
-                <form action="link" method="POST" target="_blank" id="formulario" class="needs-validation" novalidate>
-                    <div class="form-row">
-                        <div class="col-md-6 mb-3" id="divnombre">
-                            <label for="fname">Nombre:</label><br>
-                            <input type="text" id="fname" class="form-control" name="fname" placeholder="Ingrese su nombre"><br>
-                            <div id="error"></div>
-                        </div>
+            <form action="" method="POST" class="formulario" id="formulario">
+                <!-- Grupo: fname -->
+                <div class="formulario__grupo" id="grupo__fname">
+                    <label for="fname" class="formulario__label">Nombre</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="fname" id="fname" placeholder="Ingrese su nombre">
 
-                        <div class="col-md-6 mb-3" id="divapellido">
-                            <label for="lname">Apellido:</label><br>
-                            <input type="text" id="lname" class="form-control" name="lname" placeholder="Ingrese su apellido"><br>
-                        </div>
                     </div>
+                    <p class="formulario__input-error">Nombre no válido.</p>
+                </div>
 
-                    <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                            <label for="provincia">Provincia:</label><br>
-                            <select name="provincia" id="provincias" class="custom-select">
-                            <option value="Choose">Seleccione su provincia</option>
-                            <option value="BuenosAires">Buenos Aires</option>
-                            <option value="CABA">CABA</option>
-                            <option value="Catamarca">Catamarca</option>
-                            <option value="Chaco">Chaco</option>
-                            <option value="Chubut">Chubut</option>
-                            <option value="Córdoba">Córdoba</option>
-                            <option value="Corrientes">Corrientes</option>
-                            <option value="EntreRíos"> Entre Ríos</option>
-                            <option value="Formosa">Formosa</option>
-                            <option value="Jujuy">Jujuy</option>
-                            <option value="LaPampa">La Pampa</option>
-                            <option value="LaRioja">La Rioja</option>
-                            <option value="Mendoza">Mendoza</option>
-                            <option value="Misiones">Misiones</option>
-                            <option value="Neuquén">Neuquén</option>
-                            <option value="RioNegro">Río Negro</option>
-                            <option value="Salta">Salta</option>
-                            <option value="SanJuan">San Juan</option>
-                            <option value="SanLuis">San Luis</option>
-                            <option value="SantaCruz">Santa Cruz</option>
-                            <option value="SantaFe">Santa Fe</option>
-                            <option value="SantiagoDelEstero">Santiago del Estero</option>
-                            <option value="TierraDelFuego">Tierra del Fuego</option>
-                            <option value="Tucumán">Tucumán</option>
-                </select><br>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="ciudad">Ciudad:</label><br>
-                            <input type="text" class="form-control" name="city" id="city" placeholder="Ciudad de residencia"><br>
-                        </div>
+                <!-- Grupo: lname -->
+                <div class="formulario__grupo" id="grupo__lname">
+                    <label for="lname" class="formulario__label">Apellido</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="lname" id="lname" placeholder="Ingrese su apellido">
+
                     </div>
-                    <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                            <label for="mail" id=" mail">Mail de contacto:</label><br>
-                            <input type="text" id="mail" class="form-control" name="mail" placeholder="xxx@xxx.com"><br>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="phone" id="phone">Teléfono de contacto:</label><br>
-                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Ingrese su nro telefónico"><br>
-                        </div>
+                    <p class="formulario__input-error">Apellido no válido.</p>
+                </div>
+
+                <!-- Grupo: provincias -->
+                <div class="formulario__grupo" id="grupo__provincias">
+                    <label for="provincias" class="formulario__label">Provincia:</label>
+                    <select name="provincia" id="provincias" class="custom-select">
+                        <option value="Choose">Seleccione su provincia</option>
+                        <option value="BuenosAires">Buenos Aires</option>
+                        <option value="CABA">CABA</option>
+                        <option value="Catamarca">Catamarca</option>
+                        <option value="Chaco">Chaco</option>
+                        <option value="Chubut">Chubut</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="EntreRíos"> Entre Ríos</option>
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">Jujuy</option>
+                        <option value="LaPampa">La Pampa</option>
+                        <option value="LaRioja">La Rioja</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Misiones</option>
+                        <option value="Neuquén">Neuquén</option>
+                        <option value="RioNegro">Río Negro</option>
+                        <option value="Salta">Salta</option>
+                        <option value="SanJuan">San Juan</option>
+                        <option value="SanLuis">San Luis</option>
+                        <option value="SantaCruz">Santa Cruz</option>
+                        <option value="SantaFe">Santa Fe</option>
+                        <option value="SantiagoDelEstero">Santiago del Estero</option>
+                        <option value="TierraDelFuego">Tierra del Fuego</option>
+                        <option value="Tucumán">Tucumán</option>
+            </select><br>
+                </div>
+
+                <!-- Grupo: Ciudad -->
+                <div class="formulario__grupo" id="grupo__city">
+                    <label for="city" class="formulario__label">Ciudad:</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="city" id="city" placeholder="Ciudad de residencia">
+
                     </div>
-                    <label for="consulta" id="consulta">Espacio para escribir su consulta:</label><br>
-                    <textarea id="consulta" placeholder="Ingrese su consulta..." rows="5"></textarea><br>
-                    <button type="submit" class="btn btn-primary btn-lg btnblock">
-                    Enviar</button>
-            </div>
+                    <p class="formulario__input-error">Ciudad no válida.</p>
+                </div>
+
+                <!-- Grupo: Correo Electronico -->
+                <div class="formulario__grupo" id="grupo__mail">
+                    <label for="mail" class="formulario__label">Correo Electrónico</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="mail" id="mail" placeholder="correo@correo.com">
+
+                    </div>
+                    <p class="formulario__input-error">Mail no válido.</p>
+                </div>
+
+                <!-- Grupo: Teléfono -->
+                <div class="formulario__grupo" id="grupo__phone">
+                    <label for="phone" class="formulario__label">Teléfono</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="phone" id="phone" placeholder="Ingrese su nro de telefono">
+
+                    </div>
+                    <p class="formulario__input-error">Teléfono no válido.</p>
+                </div>
+                <label for="consulta" id="consulta">Espacio para escribir su consulta:</label><br>
+                <textarea id="consulta" placeholder="Ingrese su consulta..." rows="5"></textarea><br>
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                </div>
+
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                </div>
             </form>
-        </section>
     </main>
-    <footer>
-        <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap" rel="stylesheet">
-        <section>
-            <p><i class="far fa-envelope"></i>turisteca@gmail.com</p>
-            <p><i class="fas fa-phone-square-alt"></i>+54 4903-2486</p>
-            <p><i class="far fa-credit-card"></i>tarjetas de credito/debito</p>
-            <p><i class="fas fa-map-marker-alt"></i>Senillosa 60, CABA</p>
 
-        </section>
-        <section>
-            <nav class="redes">
-                <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter-square"></i></a>
-            </nav>
-        </section>
-        <address style="text-align:center;">Derechos reservados @2021</address>
-    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
-
 
 </html>
