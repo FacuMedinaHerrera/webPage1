@@ -10,6 +10,7 @@ body {
 }
 
 header {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,6 +55,7 @@ footer {
     font-size: 30px;
     padding: 16px 16px;
     text-decoration: none;
+    
 }
 
 .box div {
@@ -155,10 +157,11 @@ i {
     border: 4px rgba(23, 4, 129, 0.856) solid;
     width: auto;
     background-color: rgba(36, 36, 75, 0.877);
+    align-items: center;
+    
 }
 
 img {
     width: auto;
     display: inline-block;
-    padding: 0.3rem;
 }

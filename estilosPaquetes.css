@@ -7,6 +7,7 @@ html {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-gap: 1rem;
+    
 }
 
 .grid>div {
@@ -33,6 +34,7 @@ h2 {
 
 main {
     font-family: 'Prompt', sans-serif;
+    
 }
 
 body {
