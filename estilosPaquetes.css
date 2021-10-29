@@ -3,28 +3,26 @@ html {
     height: 100%;
 }
 
-
 .grid {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-gap: 1rem;
 }
 
-.grid> div{
+.grid>div {
     background-color: rgb(207, 207, 240);
     padding: 1rem;
 }
-.grid > div:nth-child(odd){
+
+.grid>div:nth-child(odd) {
     background: rgb(185, 182, 182)
-   
 }
-div{
+
+div {
     padding: 1rem;
 }
 
-
 h1 {
-
     text-align: center;
     font-family: 'Alfa Slab One', cursive;
 }
@@ -43,7 +41,12 @@ body {
     margin: 0;
 }
 
-header,
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 main,
 footer {
     border: 3px rgba(23, 4, 129, 0.856) solid;
@@ -56,7 +59,7 @@ footer {
     font-family: 'Khand', sans-serif;
 }
 
-.heather-logo {
+.header-logo {
     width: auto;
     display: inline-block;
     margin: 0.5rem;
@@ -102,18 +105,15 @@ i {
     padding: 1rem;
 }
 
-.c1 {
-    flex: 2;
-}
-
-.c2 {
-    flex: 1;
-}
-
-.c3 {
-    flex: 1;
-}
-
+.c1,
+.c2,
+.c3,
 .c4 {
     flex: 1;
+}
+
+@media(max-width:640px) {
+    img {
+        max-height: 80%;
+    }
 }

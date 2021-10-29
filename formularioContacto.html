@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="estilosFormularios.css">
     <title>Formulario de Contacto</title>
     <script src="https://kit.fontawesome.com/71ba4d0035.js" crossorigin="anonymous"></script>
+    <script src="scriptFormulario.js"></script>
 
 </head>
-
 
 <body>
     <header>
@@ -26,9 +26,9 @@
 
             <div class="box">
                 <div class="c1"><a href="index.html">HOME</a></div>
-                <div class="c2"></div><a href="paquetes.html">PAQUETES</a></div>
-            <div class="c3"></div><a href="previaje.html">PRE VIAJE</a></div>
-            <div class="c4"> <a href="formularioContacto.html">CONTACTO</a></div>
+                <div class="c2"><a href="paquetes.html">PAQUETES</a></div>
+                <div class="c3"><a href="previaje.html">PRE VIAJE</a></div>
+                <div class="c4"> <a href="formularioContacto.html">CONTACTO</a></div>
             </div>
         </nav>
 
@@ -39,22 +39,25 @@
                 <h1 class="display-4">Dejanos tus datos de contacto</h1>
             </div>
             <div class="container">
-                <form action="link" method="POST" target="_blank">
-                    <div class="row">
-                        <div class="col">
+                <form action="link" method="POST" target="_blank" id="formulario" class="needs-validation" novalidate>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3" id="divnombre">
                             <label for="fname">Nombre:</label><br>
-                            <input type="text" id="fname" name="fname" placeholder="Ingrese su nombre"><br>
+                            <input type="text" id="fname" class="form-control" name="fname" placeholder="Ingrese su nombre"><br>
+                            <div id="error"></div>
                         </div>
-                        <div class="col">
+
+                        <div class="col-md-6 mb-3" id="divapellido">
                             <label for="lname">Apellido:</label><br>
-                            <input type="text" id="lname" name="lname" placeholder="Ingrese su apellido"><br>
+                            <input type="text" id="lname" class="form-control" name="lname" placeholder="Ingrese su apellido"><br>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col">
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
                             <label for="provincia">Provincia:</label><br>
-                            <select name="provincia" id="provincias">
+                            <select name="provincia" id="provincias" class="custom-select">
+                            <option value="Choose">Seleccione su provincia</option>
                             <option value="BuenosAires">Buenos Aires</option>
                             <option value="CABA">CABA</option>
                             <option value="Catamarca">Catamarca</option>
@@ -81,19 +84,19 @@
                             <option value="Tucumán">Tucumán</option>
                 </select><br>
                         </div>
-                        <div class="col">
-                            <label for="localidad">Localidad:</label><br>
-                            <select name="localidad" id="localidad"></select><br>
+                        <div class="col-md-6 mb-3">
+                            <label for="ciudad">Ciudad:</label><br>
+                            <input type="text" class="form-control" name="city" id="city" placeholder="Ciudad de residencia"><br>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
                             <label for="mail" id=" mail">Mail de contacto:</label><br>
-                            <input type="text" id="mail" placeholder="xxx@xxx.com"><br>
+                            <input type="text" id="mail" class="form-control" name="mail" placeholder="xxx@xxx.com"><br>
                         </div>
-                        <div class="col">
+                        <div class="col-md-6 mb-3">
                             <label for="phone" id="phone">Teléfono de contacto:</label><br>
-                            <input type="text" id="phone" placeholder="Ingrese su nro telefónico"><br>
+                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Ingrese su nro telefónico"><br>
                         </div>
                     </div>
                     <label for="consulta" id="consulta">Espacio para escribir su consulta:</label><br>
@@ -120,7 +123,7 @@
                 <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter-square"></i></a>
             </nav>
         </section>
-
+        <address style="text-align:center;">Derechos reservados @2021</address>
     </footer>
 </body>
 
