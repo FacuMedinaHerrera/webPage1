@@ -4,41 +4,43 @@ html {
 }
 
 body {
-
-    
     min-height: 100px;
     background-color: rgb(11, 11, 59);
     margin: 0;
 }
 
-header,main,footer {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main,
+footer {
     border: 3px rgba(23, 4, 129, 0.856) solid;
     min-height: 50px;
     margin: 1rem;
     background-color: rgb(184, 184, 204);
-
 }
 
-footer{
+footer {
     font-family: 'Khand', sans-serif;
 }
 
 .heather-logo {
-    
     width: auto;
     display: inline-block;
     margin: 0.5rem;
     padding: 1rem;
-    
 }
 
-.header-menubar{
+.header-menubar {
     padding: 14px 16px;
     font-family: 'Bebas Neue', cursive;
-    position:relative;
+    position: relative;
     text-align: center;
-    
 }
+
 .header-menubar a {
     border: 4px rgba(23, 4, 129, 0.856) solid;
     background-color: rgb(182, 194, 206);
@@ -52,84 +54,81 @@ footer{
     font-size: 30px;
     padding: 16px 16px;
     text-decoration: none;
-   
 }
-.box div{
+
+.box div {
     display: flex;
     display: inline-block;
-    border: 3px ;
+    border: 3px;
     justify-content: space-between space-around;
     padding: 1rem;
-   
-   
 }
-.c1{
-  flex:2;
+
+.c1 {
+    flex: 2;
 }
-.c2{
-    flex:1;
-}
-.c3{
-    flex:1;
-}
-.c4{
+
+.c2 {
     flex: 1;
 }
+
+.c3 {
+    flex: 1;
+}
+
+.c4 {
+    flex: 1;
+}
+
 .header-menubar a:hover {
     background-color: rgb(159, 170, 190);
     color: black;
-
 }
-.contenido-principal{
+
+.contenido-principal {
     display: grid;
-    grid-template-columns: 3fr 1fr ;
+    grid-template-columns: 3fr 1fr;
     grid-gap: 1rem;
     font-family: 'DM Serif Display', serif;
     grid-auto-rows: auto;
 }
-.box1{
-    grid-column:1/2;
+
+.box1 {
+    grid-column: 1/2;
     grid-row: 1/2;
     margin: 1rem 1rem;
-    
 }
-.box2{
+
+.box2 {
     grid-column: 2/3;
-    grid-row:1/3;
+    grid-row: 1/3;
     margin: 1rem 1rem;
 }
-.box3{
-    grid-column:1/2 ;
+
+.box3 {
+    grid-column: 1/2;
     grid-row: 2/3;
     margin: 1rem 1rem;
-    
-    
 }
-.sectionG{
+
+.sectionG {
     background-color: rgb(182, 194, 206);
     padding: 1rem;
 }
-.section{
+
+.section {
     background-color: rgb(182, 194, 206);
     padding: 1rem;
     align-items: center;
     text-align: center;
-    
 }
-   
 
 main {
-    
     border: 3px rgba(23, 4, 129, 0.856) solid;
     margin: 1rem;
     background-color: rgb(184, 184, 204);
     overflow: auto;
-
 }
-
-
-
-
 
 #botonNovedades {
     background-color: rgba(11, 11, 66, 0.699);
@@ -138,27 +137,28 @@ main {
 }
 
 #botonNovedades:hover {
-  background-color:rgb(11, 11, 66) ; 
-  color:white 
-
+    background-color: rgb(11, 11, 66);
+    color: white
 }
 
-#mapa{
+#mapa {
     width: 90%;
-   min-height: 180px;
+    min-height: 180px;
 }
-i{
+
+i {
     padding: 0.5rem;
 }
-.imagenes{
+
+.imagenes {
     padding: 1rem;
     border: 4px rgba(23, 4, 129, 0.856) solid;
     width: auto;
     background-color: rgba(36, 36, 75, 0.877);
 }
-img{
+
+img {
     width: auto;
     display: inline-block;
     padding: 0.3rem;
-  
 }

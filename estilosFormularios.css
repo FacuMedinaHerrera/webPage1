@@ -48,6 +48,7 @@ footer {
     font-family: 'Bebas Neue', cursive;
     position: relative;
     text-align: center;
+    align-self: center;
 }
 
 .box div {
